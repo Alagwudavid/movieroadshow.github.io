@@ -1,5 +1,5 @@
-const iframeMenu = document.querySelector('.br_ifm');
-const iframeContainer = document.querySelector('.br_ifc');
+const iframeMenu = document.querySelector('.mRs_ifm');
+const iframeContainer = document.querySelector('.mRs_ifc');
 const overlay = document.querySelector('.overlay');
 
 iframeMenu.addEventListener('click', () => {

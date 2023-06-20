@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 /* @font-face {
     font-family: 'BebasNeue';
     src: url('assets/fonts/BebasNeue-Regular.ttf') format('truetype');
@@ -84,13 +85,10 @@ body {
     padding: 0px;
     border: none;
     box-sizing: border-box;
-    display: block; }
+ }
   
   a {
     text-decoration: none; }
-    a:focus {
-      outline: 2px dotted #f7b928;
-      padding: 5px; }
   
   ul li {
     list-style: none; }
@@ -98,7 +96,7 @@ body {
   body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif; }
+    font-family: Arial, sans-serif;}
   
   .seperator {
     background-color: #ddd;
@@ -116,10 +114,6 @@ body {
     font-size: 14px;
     font-weight: 700; }
   
-  /** for _reset.scss: css reset file **/
-  /** for _variables.scss: css variables file **/
-  /* variables */
-  /* darkmode */
   body.dark-mode {
     background-color: #1f2d3d;
     color: #ffffff; }
@@ -128,35 +122,34 @@ body {
     text-decoration: none; }
   .dark-mode .dashboard_md .img_sm {
     border: 8px solid #1f2d3d; }
-  .dark-mode .br_nv {
+  .dark-mode .mBNvBar {
     background-color: #253649;
     color: #ffffff; }
   .dark-mode footer {
     background-color: #253649;
     color: #d2d2d2; }
-  .dark-mode footer .br_HR {
+  .dark-mode footer .mRs_HR {
     height: 1px;
     background-color: #999999; }
   .dark-mode footer a {
     color: #d7d7d7; }
-  .dark-mode .br_mi > svg {
+  .dark-mode .mRs_mi > svg {
     cursor: pointer;
     fill: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center; }
-  .dark-mode .br_mis {
+  .dark-mode .mRs_mis {
     background-color: #1f2d3d; }
-  .dark-mode .br_mis li a {
+  .dark-mode .mRs_mis li a {
     color: #ffffff; }
   
   /** for _dark.scss: css darkmode file **/
   /* NAVBAR */
-  .br_nv {
+  .mBNvBar {
     background-color: #f8f9fa;
-    color: #666666;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
-    .br_nv .br_nvc {
+    color: #666666;}
+    .mBNvBar .container {
       height: 54px;
       max-width: 1188px;
       padding: 0px 30px;
@@ -164,20 +157,20 @@ body {
       display: flex;
       align-items: center;
       justify-content: space-between; }
-    .br_nv .br_ifm {
+    .mBNvBar .mRs_ifm {
       width: 40px;
       height: 40px;
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center; }
-      .br_nv .br_ifm .br_nv .br_ifm svg {
+      .mBNvBar .mRs_ifm .mBNvBar .mRs_ifm svg {
         fill: #dddddd; }
-      .br_nv .br_ifm:hover {
+      .mBNvBar .mRs_ifm:hover {
         cursor: pointer;
         border-radius: 50%;
         background-color: #1f2d3d; }
-    .br_nv .br_ifc {
+    .mBNvBar .mRs_ifc {
       display: none;
       position: absolute;
       top: 60px;
@@ -189,7 +182,7 @@ body {
       background-color: #ffffff;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       z-index: 2; }
-    .br_nv .overlay {
+    .mBNvBar .overlay {
       display: none;
       position: fixed;
       top: 0;
@@ -198,27 +191,34 @@ body {
       height: 100%;
       background-color: rgba(0, 0, 0, 0.5);
       z-index: 1; }
-    .br_nv .show-overlay {
+    .mBNvBar .show-overlay {
       display: block; }
-    .br_nv .show-iframe {
+    .mBNvBar .show-iframe {
       display: block; }
-    .br_nv .show-menu {
+    .mBNvBar .show-menu {
       display: block; }
-    .br_nv .br_col {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      gap: 15px; }
-      .br_nv .br_col .br_nm {
+    .mBNvBar .brand {
+      height: 100%;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+      .mBNvBar .brand .BrNm {
         font-size: 24px;
-        font-family: 'Righteous', cursive;
-        text-decoration: none;
-        color: #0095f6; }
-    .br_nv .br_uSm {
+        font-family: 'Poppins', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    font-weight: 700;
+    text-transform: uppercase; 
+        height: 100%;
+    background-color: #FFD700;
+    color: #000000;}
+    .mBNvBar .mRs_uSm {
       display: flex;
       align-items: center; }
-      .br_nv .br_uSm img {
+      .mBNvBar .mRs_uSm img {
         width: 40px;
         height: 40px;
         border-radius: 50%;
@@ -346,42 +346,42 @@ body {
     font-size: 15px; }
     footer a {
       color: #333333; }
-    footer .br_ft_top {
+    footer .mRs_ft_top {
       max-width: 1188px;
       margin: auto;
       padding: 15px 30px; }
-    footer .br_ft_top .ul_ftTp2 {
+    footer .mRs_ft_top .ul_ftTp2 {
       display: flex;
       list-style: none;
       align-items: center;
       justify-content: space-between; }
-    footer .br_HR {
+    footer .mRs_HR {
       background-color: #666666;
       height: 1px; }
-    footer .br_ft_btm {
+    footer .mRs_ft_btm {
       max-width: 1188px;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 10px;
       margin: auto;
       padding: 15px 30px; }
-    footer .br_ft_btm .ul_ftTp2 {
+    footer .mRs_ft_btm .ul_ftTp2 {
       display: flex;
       flex-direction: row;
       gap: 15px;
       list-style: none; }
-      footer .br_ft_btm .ul_ftTp2 li a {
+      footer .mRs_ft_btm .ul_ftTp2 li a {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center; }
-    footer .br_ft_btm .ul_ftTp3 {
+    footer .mRs_ft_btm .ul_ftTp3 {
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
       gap: 15px;
       list-style: none; }
-    footer .br_ft_btm p {
+    footer .mRs_ft_btm p {
       text-align: center; }
   
   /** for main container **/
@@ -392,10 +392,10 @@ body {
     .show-iframe {
       display: block; }
   
-    .br_ifm {
+    .mRs_ifm {
       display: block; }
   
-    .br_ifc {
+    .mRs_ifc {
       display: none; }
   
     .dashboard_md .dsmd_btfx ul {
@@ -403,12 +403,12 @@ body {
       flex-direction: column;
       gap: 8px; }
   
-    footer .br_ft_btm {
+    footer .mRs_ft_btm {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       grid-gap: 10px; }
   
-    .br_ft_btm .ul_ftTp3 {
+    .mRs_ft_btm .ul_ftTp3 {
       display: flex;
       flex-direction: row;
       justify-content: center; } }
