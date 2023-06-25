@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="assets/style/styles.css">
+  <link rel="stylesheet" type="text/css" href="assets/style/output.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
 </head>
-<body style="background-image: url(./assets/image/bg0.jpg);">
-  <header class="mBNvBar">
+<body>
+  <header class="mBNvBar _lg-screen">
     <div class="container">
         <div class="brand">
             <div class="BrNm">
@@ -21,9 +21,9 @@
         <div class="Nr_rwlnk">
                 <ul class="container">
                     <li class="lnk_Itm"><a href="#">Home</a></li>
-                    <li class="lnk_Itm"><a href="#">Box Office</a></li>
+                    <li class="lnk_Itm"><a href="#">Box-Office</a></li>
                     <li class="lnk_Itm"><a href="#">Entertainment</a></li>
-                    <li class="lnk_Itm"><a href="#">Movie News</a></li>
+                    <li class="lnk_Itm"><a href="#">Movie-News</a></li>
                     <li class="lnk_Itm"><a href="#">Events</a></li>
                 </ul>  
         </div>
@@ -36,22 +36,61 @@
         </div>
   </div>
   </header>
-<main>
-  <article>
-    <div class="dashboard_md" style="background-image: url(./dist/images/unnamed.png);">
-      <div class="ds_mdimg">
-        <!-- <img class="img_sm" src="./dist/images/IMG_USER.jpeg" alt="2d vector image of david alagwu"> -->
-        <div class="dsmd_btfx">
-          <p class="uname">David F. Alagwu</p>
-          <ul>
-            <li><ion-icon name="logo-facebook"></ion-icon></li>
-            <li><ion-icon name="logo-linkedin"></ion-icon></li>
-            <li><ion-icon name="logo-instagram"></ion-icon></li>
-            <li><ion-icon name="logo-youtube"></ion-icon></li>
-          </ul>
+  <header class="mBNvBar _sm-screen" style="display: none;">
+    <div class="container">
+      <div class="_top">
+        <div class="brand">
+            <div class="BrNm">
+                Movie
+            </div>
+            <div class="BrNmChn">
+                RoadShow
+            </div>
+        </div>
+        <div class="NvMd_Set">
+    <div class="_grp">
+    <button id="dark-mode-button"><ion-icon name="moon-outline"></ion-icon></button>
+    <button id="light-mode-button" class="activeBtn"><ion-icon name="sunny-outline"></ion-icon></button>
+    </div>
         </div>
       </div>
-    </div>
+        <div class="Nr_rwlnk _btm">
+                <ul class="container">
+                    <li class="lnk_Itm"><a href="#">Home</a></li>
+                    <li class="lnk_Itm"><a href="#">Box Office</a></li>
+                    <li class="lnk_Itm"><a href="#">Entertainment</a></li>
+                    <li class="lnk_Itm"><a href="#">Movie News</a></li>
+                    <li class="lnk_Itm"><a href="#">Events</a></li>
+                </ul>  
+        </div>
+
+  </div>
+  </header>
+<main>
+  <article>
+    <section id="cover-news" class="container">
+      <div class="cover-large" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/image/featured-2.jpg);">
+        <div class="_post-data">
+          <a class="_post-title">John Wick Season STORM's the Market today??</a>
+        </div>
+      </div>
+      <div class="cover-small">
+        <div class="_post-featured br-8px flex-sp" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/image/featured-1.jpg);">
+          <span class="_snippet-div-info">Featured Today <ion-icon name="chevron-forward"></ion-icon></span>
+          <em>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia culpa quibusdam expedita nemo, officiis...
+          </em>
+        </div>
+        <div class="_post-podcast br-8px flex-sp" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/image/featured-0.jpg);">
+            <span class="_snippet-div-info">Listen Now <ion-icon name="mic-outline"></ion-icon></span>
+            <p class="_post-podcast-info">Game on The Bike...</p>
+            <div>
+              <a href="#" id="play-btn"><ion-icon name="play"></ion-icon></a>
+            </div>
+        </div>
+      </div>
+    </section>
+    
   <section class="cont-md">
     <div class="container
     ">
