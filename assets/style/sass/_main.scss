@@ -4,7 +4,7 @@
     .container {
         height: 54px;
         max-width: 1188px;
-        padding: 0px 30px;
+        padding: 0px 20px;
         margin: auto;
         display: flex;
         align-items: center;
@@ -21,12 +21,12 @@
             font-family: 'Poppins', cursive;
             justify-content: center;
             align-items: center;
-            padding: 0px 10px;
+            padding: 0px 8px;
             font-weight: 700;
             text-transform: uppercase; 
             display: flex;
             height: 100%;
-            background-color: #FFD700;
+            background-color: #000000;
             color: #222222;
         }
         .BrNmChn {
@@ -105,28 +105,75 @@
     overflow-y: auto;
     position: relative;
     #cover-news {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            column-gap: 10px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            height: 360px;
+            // grid-template-columns: repeat(2, 1fr);
+            scroll-behavior: smooth;
+            gap: 15px;
+            border-radius: 8px;
+            overflow: auto;
+            padding-bottom: 10px;
+            &::-webkit-scrollbar {height: 9px;margin-top: 10px;}
+            &::-webkit-scrollbar-thumb {background-color: #888;border-radius: 25px;}
+            &::-webkit-scrollbar-track {background-color: #f1f1f1;border-radius: 25px; margin: 0px 70px;}
+            // .rightbtn {
+            //   color:#000000;
+            //   background-color: #1d334c;
+            //   border-radius: 50%;
+            //   position: absolute;
+            //   top: 50%;
+            //   right: 15px;
+            //   padding: 15px;
+            // }
+            .scroll-button {
+              position: absolute; /* Position the buttons */
+              top: 50%; /* Center vertically */
+              transform: translateY(-50%); /* Adjust the vertical alignment */
+              padding: 5px; /* Add some padding */
+              background-color: #f1f1f1; /* Set the button background color */
+              border: none; /* Remove the button border */
+              outline: none; /* Remove the button outline */
+              cursor: pointer; /* Set the cursor to a pointer */
+              transition: opacity 0.3s ease; /* Add transition for smooth opacity change */
+              &.scroll-button-left{
+                opacity: 0;/* Initially hide the buttons */
+              }
+            }
+            
+            .scroll-button-left {
+              left: 5px; /* Position the left button */
+            }
+            
+            .scroll-button-right {
+              right: 5px; /* Position the right button */
+            }
         .cover-large {
             background-repeat: no-repeat;
             background-size: cover;
-            aspect-ratio: 3/2;
+            aspect-ratio: 16/9;
+            min-width: 400px;
+            padding-top: 15px !important;
+            padding: 0px 15px;
             color: #ffffff;
             border-radius: 8px;
             display: flex;
-            align-items: flex-end;
+            flex-direction: column;
+            justify-content: space-between;
             overflow: hidden;
                 ._post-data {
                 width: 100%;
-                padding:10PX  20px;
+                height: 60px;
+                padding:10px;
+                padding-bottom: 20px;
                 background-color: #000000;
                 box-shadow: 0px 0px 80px 70px #000000;
                 overflow: hidden;
                     ._post-title {
                     text-transform: uppercase;
                     font-weight: 700;
-                    font-size: 32px;
+                    font-size: calc(1.5vw + 6px);
                     display: flex;
                         &:hover {
                         text-decoration: dotted underline; }
@@ -142,6 +189,7 @@
                       padding: 10px;
                       }
                       ._post-featured {
+                        width: 270px;
                         padding: 20px 10px;
                         position: relative;
                         flex-direction: column;
@@ -151,6 +199,7 @@
                         background-repeat: no-repeat;
                         }
                       ._post-podcast{
+                        width: 270px;
                         padding: 20px 10px;
                         position: relative;
                         flex-direction: column;
@@ -175,27 +224,19 @@
     }
   }
     .cont-md {
-      background-color: #f8f9fa;
       max-width: 1188px;
-      padding: 20px;
-      border-radius: 6px;
       margin: 15px auto;
+      padding: 0;
+      .container {
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #5c5c5c;
       display: flex;
       flex-direction: column;
+      height: 300px;
       position: relative;
+      padding: 20px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-      .container {
-        color: #5c5c5c;
-        .heading-md {
-          gap: 5px; }
-        ul {
-          font-size: 14px;
-          li {
-            padding: 4px 6px;
-            border-radius: 6px;
-            background-color: #0095f6;
-            margin: 5px;
-            color: #f8f9fa; } }
         }
     }
 } 

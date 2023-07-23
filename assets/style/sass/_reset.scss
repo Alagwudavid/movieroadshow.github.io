@@ -46,9 +46,12 @@
   section {
     max-width: 1234px;
     margin: 50px auto 0px;
-    padding: 0px 24px;
+    padding: 0px 15px;
   }
-
+  ._mg-20-lr {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
   ._snippet-div-info{
     display: flex;
     align-items: center;

@@ -5,16 +5,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+<!-- <base href="./"> -->
 </head>
 <body>
-  <header class="mBNvBar _lg-screen">
+  <header class="mBNvBar lg-screen">
     <div class="container">
         <div class="brand">
             <div class="BrNm">
-                Movie
+               <img src="./assets/image/mrs.png" width="35px">
             </div>
             <div class="BrNmChn">
-                RoadShow
+              Movie <br>
+              RoadShow
             </div>
         </div>
 
@@ -36,7 +38,7 @@
         </div>
   </div>
   </header>
-  <header class="mBNvBar _sm-screen" style="display: none;">
+  <header class="mBNvBar sm-screen" style="display: none;">
     <div class="container">
       <div class="_top">
         <div class="brand">
@@ -68,20 +70,21 @@
   </header>
 <main>
   <article>
-    <section id="cover-news" class="container">
-      <div class="cover-large" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/image/featured-2.jpg);">
+    <section id="cover-news" class="container has-margin-">
+      <div class="cover-large" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/image/featured-2.jpg);">
+        <span class="_snippet-div-info">Featured Today <ion-icon name="chevron-forward"></ion-icon></span>
         <div class="_post-data">
           <a class="_post-title">John Wick Season STORM's the Market today??</a>
         </div>
       </div>
       <div class="cover-small">
-        <div class="_post-featured br-8px flex-sp" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/image/featured-1.jpg);">
+        <div class="_post-featured br-8px flex-sp" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/image/featured-1.jpg);">
           <span class="_snippet-div-info">Featured Today <ion-icon name="chevron-forward"></ion-icon></span>
           <em>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia culpa quibusdam expedita nemo, officiis...
           </em>
         </div>
-        <div class="_post-podcast br-8px flex-sp" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/image/featured-0.jpg);">
+        <div class="_post-podcast br-8px flex-sp" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/image/featured-0.jpg);">
             <span class="_snippet-div-info">Listen Now <ion-icon name="mic-outline"></ion-icon></span>
             <p class="_post-podcast-info">Game on The Bike...</p>
             <div>
@@ -89,24 +92,15 @@
             </div>
         </div>
       </div>
+      <!-- <button class="rightbtn"><ion-icon name="chevron-forward"></ion-icon></button> -->
+      <button class="scroll-button scroll-button-left" onclick="scrollLeft()"><ion-icon name="chevron-back"></ion-icon></button>
+  <button class="scroll-button scroll-button-right" onclick="scrollRight()"><ion-icon name="chevron-forward"></ion-icon></button>
+    
     </section>
     
   <section class="cont-md">
-    <div class="container
-    ">
-    <p class="heading-md fl-row"><ion-icon name="bar-chart-outline"></ion-icon> STATS</p>
-    <span class="seperator"></span>
-    <ul class="fl-row">
-      <li class="fl-row"><p>100%</p> Html</li>
-      <li>Css</li>
-      <li>Javasript</li>
-      <li>Sass</li>
-      <li>Python</li>
-      <li>C</li>
-      <li>Php</li>
-      <li>Wordpress</li>
-    </ul>
-  </div>
+    <div class="container _mg-20-lr" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/image/featured-2.jpg);">
+    </div>
   </section>
         
   </article>

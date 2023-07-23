@@ -1,6 +1,14 @@
   /*
   MEDIA
   */
+  @media only screen and (max-width: 340px) {
+    .lg-screen {
+      display: none;
+    }
+    .sm-screen {
+      display: block;
+    }
+  }
   @media only screen and (max-width: 768px) {
     .show-iframe {
       display: block; }

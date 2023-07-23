@@ -50,3 +50,35 @@ function disableDarkMode() {
   darkModeButton.classList.remove('activeBtn');
   localStorage.setItem('darkMode', 'false');
 }
+
+
+
+// const scrollContainer = document.querySelector('#cover-news');
+// const scrollContent = document.querySelector('.cover-large');
+
+// function scrollRight() {
+//   scrollContainer.scrollLeft += 50; // Adjust the scroll amount as needed
+// }
+// const rightButton = document.querySelector('.rightbtn');
+// rightButton.addEventListener('click', scrollRight);
+
+
+const scrollContainer = document.querySelector('#cover-news');
+const scrollContent = document.querySelector('.cover-large');
+const leftButton = document.querySelector('.scroll-button-left');
+const rightButton = document.querySelector('.scroll-button-right');
+
+function scrollLeft() {
+  scrollContainer.scrollLeft -= scrollContainer.offsetWidth; // Scroll by the container's width
+}
+
+function scrollRight() {
+  scrollContainer.scrollLeft += scrollContainer.offsetWidth; // Scroll by the container's width
+}
+
+// Show/hide the buttons based on scroll position
+scrollContainer.addEventListener('scroll', function() {
+  leftButton.style.opacity = scrollContainer.scrollLeft > 0 ? 1 : 0;
+  rightButton.style.opacity =
+    scrollContainer.scrollLeft < scrollContent.offsetWidth - scrollContainer.offsetWidth ? 1 : 0;
+});
