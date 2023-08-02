@@ -371,12 +371,10 @@ main .cont-md {
   padding: 0;
 }
 main .cont-md .container {
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #5c5c5c;
   display: flex;
-  flex-direction: column;
-  height: 300px;
+  flex-direction: row;
+  color: #5c5c5c;
+  height: 250px;
   position: relative;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -409,6 +407,12 @@ footer .mRs_ft_top .ul_ftTp2 {
   list-style: none;
   align-items: center;
   justify-content: space-between;
+}
+footer .mRs_ft_top .ul_ftTp2 .snip_radio-outlink {
+  background-color: #eb0a0a;
+  border-radius: 6px;
+  padding: 6px;
+  color: #fff;
 }
 
 footer .mRs_HR {

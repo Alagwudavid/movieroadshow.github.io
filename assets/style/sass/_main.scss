@@ -118,15 +118,6 @@
             &::-webkit-scrollbar {height: 9px;margin-top: 10px;}
             &::-webkit-scrollbar-thumb {background-color: #888;border-radius: 25px;}
             &::-webkit-scrollbar-track {background-color: #f1f1f1;border-radius: 25px; margin: 0px 70px;}
-            // .rightbtn {
-            //   color:#000000;
-            //   background-color: #1d334c;
-            //   border-radius: 50%;
-            //   position: absolute;
-            //   top: 50%;
-            //   right: 15px;
-            //   padding: 15px;
-            // }
             .scroll-button {
               position: absolute; /* Position the buttons */
               top: 50%; /* Center vertically */
@@ -228,12 +219,12 @@
       margin: 15px auto;
       padding: 0;
       .container {
-        background-repeat: no-repeat;
-        background-size: cover;
+        // background-repeat: no-repeat;
+        // background-size: contain;
+        display: flex;
+        flex-direction: row;
         color: #5c5c5c;
-      display: flex;
-      flex-direction: column;
-      height: 300px;
+      height: 250px;
       position: relative;
       padding: 20px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -260,7 +251,14 @@
       display: flex;
       list-style: none;
       align-items: center;
-      justify-content: space-between; }
+      justify-content: space-between;
+      .snip_radio-outlink{
+        background-color: #eb0a0a;
+        border-radius: 6px;
+        padding: 6px;
+        color: #fff;
+      }
+    }
     footer .mRs_HR {
       background-color: #666666;
       height: 1px; }
@@ -270,7 +268,7 @@
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 10px;
       margin: auto;
-      padding: 15px 30px; }
+      padding: 15px 30px;}
     footer .mRs_ft_btm .ul_ftTp2 {
       display: flex;
       flex-direction: row;
